@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Convert object to JSON stringtify for feed Bloom</title>
+</head>
+
+<body>
+    <div>
+        <h1>Input</h1>
+        <textarea name="" id="input" cols="100" rows="10"></textarea>
+        <div>
+            <button id="submit">Tranfer</button>
+        </div>
+    </div>
+
+    <div>
+        <h1>Result</h1>
+        <textarea cols="100" rows="5" id="result"></textarea>
+        <div>
+            <button onclick="copyText()" id="copy">Copy text</button>
+        </div>
+    </div>
+    <div>
+        <h1>Ruler</h1>
+        <div id="ruler">
+            <p>#INPUT</p>
+            <p>(key)=(value)</p>
+            value only can be string or number
+        </div>
+    </div>
+    <div>
+        <h1>Example</h1>
+        <div id="example">
+            <p>#INPUT</p>
+            <p>name=hoan</p>
+            <p>password=Hoan123</p>
+            <p>#RESULT</p>
+            <p>"{\"name\":\"hoan\",\"password\":\"Hoan123\"}"</p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
